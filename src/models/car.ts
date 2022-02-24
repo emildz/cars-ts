@@ -8,5 +8,6 @@ export interface Car {
     isElectric?: boolean;
     used?: boolean;
     vin?: string
+    id?: string
 
 }
