@@ -22,8 +22,8 @@ const getAllCars = async (): Promise<Car[] | null> => {
     const result = await carCollection.get();
     const cars = result.docs.map((doc) => {
         const car: Car = doc.data() 
-        car.id = doc.id;
-        return car;
+        car.id = doc.id
+        return car
     });
         return cars
 }       catch (error) {
